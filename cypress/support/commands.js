@@ -28,3 +28,11 @@ Cypress.Commands.add('loginSaucedemo', (username, password) => {
   cy.get('#password').type(password);
   cy.get('#login-button').click();
 });
+
+Cypress.Commands.add('VerifyError', (message) => {
+    cy.get('[data-test="error"]').should('have.text', message);
+});
+
+Cypress.Commands.add('VerifySuccess', (title) => {
+    cy.get('[data-test="title"]').should('contain.text', title);
+})

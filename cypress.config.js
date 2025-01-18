@@ -15,5 +15,6 @@ module.exports = defineConfig({
     viewportWidth: 950,
     defaultCommandTimeout: 4500,
     screenshotOnRunFailure: false,
+    defaultBrowser: 'chrome',
   },
 });
