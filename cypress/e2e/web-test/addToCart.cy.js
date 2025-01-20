@@ -10,8 +10,8 @@ describe('Saucedemo add to cart Scenarios', () => {
         addToCartPage.addBackPack();
         addToCartPage.verifyCart('1');
         addToCartPage.cartNoContent();
-        addToCartPage.removeBP();
-        //cy.get('[data-test="remove-sauce-labs-backpack"]').click();
+        //addToCartPage.removeBP();
+        cy.get('[data-test="remove-sauce-labs-backpack"]').click();
         //cy.get('[data-test="shopping-cart-link"]').should('not.contain.text');
         cy.get('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
         cy.get('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
